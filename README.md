@@ -5,6 +5,9 @@ and plays a cheerful notification whenever the price goes up.
 
 *(Inspired by one of my personal favourite TV shows, HBO's Silicon Valley)*
 
+* Download the code from my repository and run:
+`python3 bitcoin.py`
+
 * **Terminal Preview:**
 <img src="./images/bitcoin.png" width=300>
 
