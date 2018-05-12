@@ -5,7 +5,10 @@ and plays a cheerful notification whenever the price goes up.
 
 *(Inspired by one of my personal favourite TV shows, HBO's Silicon Valley)*
 
-* Python function for playing audio file:
+* **Terminal Preview:**
+<img src="./images/bitcoin.png" width=300>
+
+* **Python function for playing audio file:**
 ```
 def playAudio(filename):
     chunk = 1024
@@ -32,7 +35,7 @@ def playAudio(filename):
 ```
 
 
-* Python function for looking up and printing out the Bitcoin current status:
+* **Python function for looking up and printing out the Bitcoin current status:**
 ```
 def lookup():
     api_request = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=10")
@@ -67,7 +70,7 @@ def lookup():
             api = ""
 ```
 
-* Importing colours to spice up the output in terminal:
+* **Importing colours to spice up the output in terminal: (optional)**
 ```
 class bcolors:
     HEADER = '\033[95m'
@@ -81,7 +84,7 @@ class bcolors:
 
 ```
 
-* Finally putting the functions into a while loop and loop every second until the API updates the Bitcoin price
+* **Finally, putting the functions into a while loop and loop every second until the API updates the Bitcoin price**
 *which is every 5 minutes*
 ```
 while 1:
