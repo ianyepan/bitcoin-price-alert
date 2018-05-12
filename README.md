@@ -80,3 +80,16 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 ```
+
+* Finally putting the functions into a while loop and loop every second until the API updates the Bitcoin price
+*which is every 5 minutes*
+```
+while 1:
+    api_request = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=10")
+    api = json.loads(api_request.content)
+    for dic in api:
+        if dic["symbol"] == "BTC":
+            if float(dic["last_updated"]) > float(t):
+                lookup()
+    time.sleep(1)
+```
