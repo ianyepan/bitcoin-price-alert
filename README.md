@@ -92,7 +92,7 @@ while 1:
     api = json.loads(api_request.content)
     for dic in api:
         if dic["symbol"] == "BTC":
-            if float(dic["last_updated"]) > float(t):
+            if float(dic["last_updated"]) > float(t):   # If the price is updated
                 lookup()
-    time.sleep(1)
+    time.sleep(1)    # re-run API request after 1 second
 ```
