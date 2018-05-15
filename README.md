@@ -9,7 +9,7 @@ and plays a cheerful notification whenever the price goes up.
 `python3 bitcoin.py`
 
 * **Terminal Preview:**
-<img src="./images/bitcoin.png" width=300>
+<img src="./images/bitcoin.png" width=500>
 
 * **Python function for playing audio file:**
 ```
