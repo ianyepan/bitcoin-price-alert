@@ -7,7 +7,7 @@ and plays a cheerful notification whenever the price goes up.
 
 * Download the code from my repository and run:
 
-`python3 bitcoin.py`
+    `python3 bitcoin.py`
 
 * **Terminal Preview:**
 <img src="./images/bitcoin.png" width=500>
