@@ -11,6 +11,8 @@ and plays a cheerful notification whenever the price goes up.
     
     
 
+
+
 * **Terminal Preview:**
 <img src="./images/bitcoin.png" width=500>
 
