@@ -44,7 +44,7 @@ def playAudio(filename):
 
 
 * **Python function for looking up and printing out the Bitcoin current status:**
-```
+```python
 def lookup():
     api_request = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=10")
     # Into nicely parsed JSON format:
@@ -79,7 +79,7 @@ def lookup():
 ```
 
 * **Importing colours to spice up the output in terminal: (optional)**
-```
+```python
 class bcolors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
@@ -94,7 +94,7 @@ class bcolors:
 
 * **Finally, putting the functions into a while loop and loop every second until the API updates the Bitcoin price**
 *which is every 5 minutes*
-```
+```python
 while 1:
     api_request = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=10")
     api = json.loads(api_request.content)
