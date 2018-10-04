@@ -17,7 +17,7 @@ and plays a cheerful notification whenever the price goes up.
 <img src="./images/bitcoin.png" width=500>
 
 * **Python function for playing audio file:**
-```
+```python
 def playAudio(filename):
     chunk = 1024
     # wf for wave files
