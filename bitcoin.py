@@ -10,14 +10,14 @@ os.system("clear")  # Automatically clears screen when programme runs
 
 
 class bcolors:
-    HEADER = '\033[95m'
-    BLUE = '\033[94m'
-    GREEN = '\033[92m'
-    WARNING = '\033[93m'
-    RED = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
+    HEADER = "\033[95m"
+    BLUE = "\033[94m"
+    GREEN = "\033[92m"
+    WARNING = "\033[93m"
+    RED = "\033[91m"
+    ENDC = "\033[0m"
+    BOLD = "\033[1m"
+    UNDERLINE = "\033[4m"
 
 
 def playAudio(filename):
@@ -59,30 +59,67 @@ def lookup():
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     for dic in api:
         if dic["symbol"] == "BTC":
-            print(bcolors.BOLD + bcolors.WARNING + bcolors.UNDERLINE + "< "
-                  + dic["name"] + " (" + dic["symbol"] + ") >" + bcolors.ENDC)
-            print(bcolors.BOLD + " * Current price: $" + dic["price_usd"]
-                  + " USD" + bcolors.ENDC)
+            print(
+                bcolors.BOLD
+                + bcolors.WARNING
+                + bcolors.UNDERLINE
+                + "< "
+                + dic["name"]
+                + " ("
+                + dic["symbol"]
+                + ") >"
+                + bcolors.ENDC
+            )
+            print(
+                bcolors.BOLD
+                + " * Current price: $"
+                + dic["price_usd"]
+                + " USD"
+                + bcolors.ENDC
+            )
             newPrice = float(dic["price_usd"])
             diff = newPrice - oldPrice
             t = dic["last_updated"]
-            print("  (Last updated: "
-                  + str(datetime.fromtimestamp(float(t))) + ")")
+            print("  (Last updated: " + str(datetime.fromtimestamp(float(t))) + ")")
             if diff < 0:
-                print(bcolors.RED + "  Price fell by $" + str(diff)
-                      + " USD" + bcolors.ENDC)
+                print(
+                    bcolors.RED
+                    + "  Price fell by $"
+                    + str(diff)
+                    + " USD"
+                    + bcolors.ENDC
+                )
                 playAudio("./audio/napalmdeath.wav")
             if diff >= 0 and diff < 5000:
-                print(bcolors.GREEN + "  Price rose by $" + str(diff)
-                      + " USD" + bcolors.ENDC)
+                print(
+                    bcolors.GREEN
+                    + "  Price rose by $"
+                    + str(diff)
+                    + " USD"
+                    + bcolors.ENDC
+                )
                 playAudio("./audio/light.wav")
             print(" *1-Hour-Change:")
             if float(dic["percent_change_1h"]) < 0:
-                print(bcolors.BOLD + bcolors.RED + "    Dropping"
-                      + bcolors.ENDC + " by " + dic["percent_change_1h"] + "%")
+                print(
+                    bcolors.BOLD
+                    + bcolors.RED
+                    + "    Dropping"
+                    + bcolors.ENDC
+                    + " by "
+                    + dic["percent_change_1h"]
+                    + "%"
+                )
             elif float(dic["percent_change_1h"]) > 0:
-                print(bcolors.BOLD + bcolors.GREEN + "    Rising"
-                      + bcolors.ENDC + " by " + dic['percent_change_1h'] + "%")
+                print(
+                    bcolors.BOLD
+                    + bcolors.GREEN
+                    + "    Rising"
+                    + bcolors.ENDC
+                    + " by "
+                    + dic["percent_change_1h"]
+                    + "%"
+                )
             print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             oldPrice = newPrice
             api_request = ""
