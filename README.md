@@ -9,10 +9,15 @@ and plays a cheerful notification whenever the price goes up.
 
     `python3 bitcoin.py`
     
+* You might need to install some Python libraries and their dependencies:
+
+    `brew install portaudio`
+
+    `pip install pyaudio`
     
-
-
-
+    `pip install requests`
+    
+    
 * **Terminal Preview:**
 <img src="./images/bitcoin.png" width=500>
 
