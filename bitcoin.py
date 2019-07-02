@@ -126,7 +126,7 @@ def lookup():
             api = ""
 
 
-while 1:
+while True:
     api_request = requests.get("https://api.coinmarketcap.com/v1/ticker/?limit=10")
     api = json.loads(api_request.content)
     for dic in api:
