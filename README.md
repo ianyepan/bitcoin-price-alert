@@ -1,5 +1,9 @@
 # bitcoin-price-alert
 
+<p align="center">
+  <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F50%2FBitcoin.png&f=1" height="48" width="48" />
+</p>
+
 Automatically refreshes the current Bitcoin price and plays "You Suffer" by Napalm Death every time it detects a price drop;
 and plays a cheerful notification whenever the price goes up.
 
