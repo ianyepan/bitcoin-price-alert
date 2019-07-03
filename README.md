@@ -1,7 +1,7 @@
 # bitcoin-price-alert
 
 <p align="center">
-  <img src="https://en.bitcoin.it/w/images/en/5/50/Bitcoin.png" height="48" width="48" />
+  <img src="https://en.bitcoin.it/w/images/en/5/50/Bitcoin.png" height="100" width="100" />
 </p>
 
 Automatically refreshes the current Bitcoin price and plays "You Suffer" by Napalm Death every time it detects a price drop;
