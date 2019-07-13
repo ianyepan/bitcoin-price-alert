@@ -1,4 +1,4 @@
-# bitcoin-price-alert
+### Bitcoin Price Alert
 
 <p align="center">
   <img src="https://en.bitcoin.it/w/images/en/5/50/Bitcoin.png" height="100" width="100" />
