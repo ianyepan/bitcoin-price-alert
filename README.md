@@ -1,3 +1,5 @@
+# Note: API deprecated. I'm planning to create a new React front end with the new CoinMarketCap API in near future.
+
 ### Bitcoin Price Alert
 
 <p align="center">
